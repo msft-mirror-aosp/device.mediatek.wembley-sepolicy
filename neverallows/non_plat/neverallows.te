@@ -14,6 +14,7 @@
 #
 full_treble_only(`
   neverallow ~{
+    apexd
     init
     merged_hal_service
     mtk_hal_bluetooth
@@ -213,6 +214,7 @@ full_treble_only(`
 #
 full_treble_only(`
   neverallow ~{
+    apexd
     cameraserver
     fastbootd
     hal_camera

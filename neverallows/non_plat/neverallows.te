@@ -224,6 +224,7 @@ full_treble_only(`
     fastbootd
     hal_camera
     hal_camera_default
+    hal_evs_default
     init
     mtk_hal_camera
     otapreopt_chroot
@@ -241,6 +242,7 @@ full_treble_only(`
     fastbootd
     hal_camera
     hal_camera_default
+    hal_evs_default
     mtk_hal_camera
     system_server
     shell

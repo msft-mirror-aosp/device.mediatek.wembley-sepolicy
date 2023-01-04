@@ -257,6 +257,7 @@ full_treble_only(`
    ')
 
   neverallow ~{
+    artd
     apexd
     init
     installd
@@ -270,6 +271,8 @@ full_treble_only(`
     with_asan(`asan_extract')
     zygote
     } system_data_file:dir ~{ search getattr };
+
+  neverallow artd system_data_file:dir ~r_dir_perms;
 
   neverallow apexd system_data_file:dir ~r_dir_perms;
 

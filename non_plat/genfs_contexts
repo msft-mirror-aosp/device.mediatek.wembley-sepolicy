@@ -234,7 +234,7 @@ genfscon debugfs /smi_mon u:object_r:debugfs_smi_mon:s0
 
 genfscon iso9660 / u:object_r:iso9660:s0
 genfscon rawfs / u:object_r:rawfs:s0
-genfscon fuseblk / u:object_r:fuseblk:s0
+
 
 # 2019/08/24
 genfscon sysfs /class/sensor u:object_r:sysfs_sensor:s0
@@ -356,18 +356,10 @@ genfscon proc /displowpower u:object_r:proc_displowpower:s0
 # Date : WK20.25
 # Operation: R migration
 # Purpose : for VTS NetdSELinuxTest.CheckProperMTULabels requirement.
-genfscon sysfs /devices/platform/18000000.wifi/net/wlan0/mtu u:object_r:sysfs_net:s0
-genfscon sysfs /devices/platform/18000000.wifi/net/wlan1/mtu u:object_r:sysfs_net:s0
-genfscon sysfs /devices/platform/soc/18000000.wifi/net/wlan0/mtu u:object_r:sysfs_net:s0
-genfscon sysfs /devices/platform/soc/18000000.wifi/net/wlan1/mtu u:object_r:sysfs_net:s0
-genfscon sysfs /devices/platform/180f0000.wifi/net/wlan0/mtu u:object_r:sysfs_net:s0
-genfscon sysfs /devices/platform/180f0000.wifi/net/wlan1/mtu u:object_r:sysfs_net:s0
-genfscon sysfs /devices/platform/180f0000.wifi/net/p2p0/mtu u:object_r:sysfs_net:s0
-genfscon sysfs /devices/platform/180f0000.wifi/net/p2p1/mtu u:object_r:sysfs_net:s0
-genfscon sysfs /devices/platform/bus/180f0000.WIFI/net/wlan0/mtu u:object_r:sysfs_net:s0
-genfscon sysfs /devices/platform/bus/180f0000.WIFI/net/wlan1/mtu u:object_r:sysfs_net:s0
-genfscon sysfs /devices/platform/bus/180f0000.WIFI/net/p2p0/mtu u:object_r:sysfs_net:s0
-genfscon sysfs /devices/platform/bus/180f0000.WIFI/net/p2p1/mtu u:object_r:sysfs_net:s0
+genfscon sysfs /devices/platform/18000000.wifi/net u:object_r:sysfs_net:s0
+genfscon sysfs /devices/platform/soc/18000000.wifi/net u:object_r:sysfs_net:s0
+genfscon sysfs /devices/platform/180f0000.wifi/net u:object_r:sysfs_net:s0
+genfscon sysfs /devices/platform/bus/180f0000.WIFI/net u:object_r:sysfs_net:s0
 
 # 2020/06/29
 # Operation: R migration

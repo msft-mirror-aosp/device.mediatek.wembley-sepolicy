@@ -218,38 +218,6 @@ full_treble_only(`
 #   hal_client_domain(cameraserver, hal_camera)
 #
 full_treble_only(`
-  neverallow ~{
-    apexd
-    cameraserver
-    fastbootd
-    hal_camera
-    hal_camera_default
-    hal_evs_default
-    init
-    mtk_hal_camera
-    otapreopt_chroot
-    recovery
-    shell
-    slideshow
-    system_server
-    vendor_init
-    vold
-    ueventd
-    } device:dir ~{ search getattr };
-
-  neverallow {
-    cameraserver
-    fastbootd
-    hal_camera
-    hal_camera_default
-    hal_evs_default
-    mtk_hal_camera
-    system_server
-    shell
-    slideshow
-    recovery
-    } device:dir ~r_dir_perms;
-
   neverallow init device:dir ~{ create_dir_perms mounton relabelto };
 
   neverallow vendor_init device:dir ~{ create_dir_perms mounton };
